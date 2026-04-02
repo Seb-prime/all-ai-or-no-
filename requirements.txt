@@ -1,0 +1,14 @@
+# FirewallX
+
+AI-powered threat detection system with blockchain audit logging.
+
+## Features
+- UEBA anomaly detection (Isolation Forest)
+- Rule-based threat detection
+- Blockchain-based tamper-proof logs
+- Real-time monitoring dashboard
+- Exportable audit logs
+ scikit-learn
+ numpy
+ pandas
+## Run
