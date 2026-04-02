@@ -69,19 +69,8 @@ class FirewallXBackend:
 
     def get_threats(self):
         return self.ueba.get_threats()
-    
-def get_top_attackers(self):
-    logs = self.get_logs()
-    counts = {}
 
-    for block in logs:
-        data = block.get("data", {})
-        ip = data.get("ip_address", "unknown")
-
-        if data.get("is_threat"):
-            counts[ip] = counts.get(ip, 0) + 1
-
-    return sorted(counts.items(), key=lambda x: x[1], reverse=True)
+    # -------- SECURITY --------
     def is_secure(self):
         return self.blockchain.is_valid()
 
